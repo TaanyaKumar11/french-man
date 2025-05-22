@@ -1,0 +1,10 @@
+alphabet
+book
+cactus
+dog
+mystical
+rabbit
+soup
+taco
+zebra
+cookie
