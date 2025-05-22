@@ -20,7 +20,7 @@ public class Game
 	private ArrayList<Character> previousGuesses = new ArrayList<Character>();
 	
 	//Maximum number of attempts.
-	private int maxAttempts = 6;
+	private int maxAttempts = 7;
 	//Current attempt. Increases by 1 if the user guesses an incorrect letter.
 	private int currentAttempt = 0;
 	//Stores the word to be guessed.
@@ -117,38 +117,35 @@ public class Game
 	{
 		//DRAW
 		if (currentAttempt == 0) {
-            return "";
-        } 
-        else if (currentAttempt == 1) {
             return "  0 \n" +
                    " /|\\ \n" +
                    "  | \n" +
                    " / \\";
         } 
-        else if (currentAttempt == 2) {
+        else if (currentAttempt == 1) {
             return "  0 \n" +
                    " /|\\ \n" +
                    "  | \n" +
                    " /";
         } 
-        else if (currentAttempt == 3) {
+        else if (currentAttempt == 2) {
             return "  0\n" +
                    " /|\\\n" +
                    "  |";
         } 
-        else if (currentAttempt == 4) {
+        else if (currentAttempt == 3) {
             return "  0\n" +
                    " /|\\";
         } 
-        else if (currentAttempt == 5) {
+        else if (currentAttempt == 4) {
             return "  0\n" +
                    " /|";
         } 
-        else if (currentAttempt == 6) {
+        else if (currentAttempt == 5) {
             return "  0\n" +
                    "  |";
         } 
-        else if (currentAttempt == 7) {
+        else if (currentAttempt == 6) {
             return "  0 \n";
         }
         else {
